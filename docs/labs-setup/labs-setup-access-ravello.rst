@@ -3,9 +3,7 @@
 Connecting to Ravello
 =================
 
-We consider that you have access to UDF for the different labs. 
-
-This guide will help you to either setup your own environment or leverage F5 UDF (you must be a F5 employee) to learn about this. 
+This guide will help you to either setup your own environment or leverage Ravello to learn about this. 
 
 
 Create your environment
@@ -14,13 +12,8 @@ Create your environment
 If you want to setup your own kubernetes environment, you need to create your own deployment reflecting what has been explained in the previous section. Please go to the Cluster setup guide to do this: :ref:`my-cluster-setup`
 
 
-Start your UDF environment
+Connect to your Ravello Student environment
 --------------------------
-
-Connect to UDF and go to deployment. 
-
-Select the relevant blueprint: *[Kubernetes] how to setup ASP and CC* blueprint and deploy it. This blueprint contains a standalone Kubernetes deployment (1 master, 2 nodes).
-
 
 .. warning:: 
 
@@ -29,10 +22,10 @@ Select the relevant blueprint: *[Kubernetes] how to setup ASP and CC* blueprint 
 ==================  ====================  ====================  ============  =============================================
      Hostname           Management IP        Kubernetes IP          Role                 Login/Password
 ==================  ====================  ====================  ============  =============================================
-     Master 1             10.1.1.4            10.1.10.11          Master       ssh: ubuntu/<your key> - su : root/default           
-      node 1              10.1.1.5            10.1.10.21           node        ssh: ubuntu/<your key> - su : root/default
-      node 2              10.1.1.6            10.1.10.22           node        ssh: ubuntu/<your key> - su : root/default
-     Windows                10.1.1.7            10.1.10.50        Jumpbox            administrator / &NUyBADsdo
+     Master 1             10.1.1.4            10.1.10.11          Master       ssh: ubuntu/ravello - su : root/default           
+      node 1              10.1.1.5            10.1.10.21           node        ssh: ubuntu/ravello - su : root/default
+      node 2              10.1.1.6            10.1.10.22           node        ssh: ubuntu/ravello - su : root/default
+     Windows                10.1.1.7            10.1.10.50        Jumpbox      rdp: student/agility
 ==================  ====================  ====================  ============  =============================================
 
 .. note::
@@ -42,13 +35,13 @@ Select the relevant blueprint: *[Kubernetes] how to setup ASP and CC* blueprint 
 Access your environment
 -----------------------
 
-If you deployed the existing blueprint mentioned above; Once your environment is started, find the 'Jumpbox' component under 'Components' and launch RDP (in the ACCESS menu)
+Once your environment is started, find the 'Windows CTF Jumpbox' component under list of VMs and launch RDP (in the ACCESS menu)
 
 .. image:: ../images/Launch-RDP.png
    :scale: 50%
    :align: center
 
-Click on the shortcut that got downloaded and it should open your RDP session. The credentials to use are **administrator/&NUyBADsdo**
+Click on the shortcut that got downloaded and it should open your RDP session. The credentials to use are **student/agility**
 
 *If you have trouble reading the text please see optional directions for changing text size in the Appendix.*
 
