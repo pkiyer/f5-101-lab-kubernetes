@@ -3,7 +3,7 @@ Container Connector Usage
 
 Now that our container connector is up and running, let's deploy an application and leverage our CC. 
 
-if you don't use UDF, you can deploy any application you want. In UDF, the blueprint already has a container called f5-demo-app already loaded as an image (Application provided by Eric Chen - F5 Cloud SA). It is loaded in our container registry 10.1.10.11:5000/f5-demo-app
+The environment already has a container called f5-demo-app already loaded as an image (Application provided by Eric Chen - F5 Cloud SA). It is available via docker hub - chen23/f5-demo-app
 
 To deploy our front-end application, we will need to do the following:
 
@@ -97,9 +97,6 @@ Create a file called my-frontend-service.yaml:
 
 .. Note::
 
-	If you use UDF, you have templates you can use in your jumpbox. It's on the Desktop > F5 > kubernetes-demo folder. If you use those files, you'll need to :
-	* check the container image path in the deployment file is accurate
-	* Update the "bindAddr" in the configMap for an IP you want to use in this blueprint. 
 
 We can now launch our application : 
 
@@ -149,13 +146,13 @@ Now that we have deployed our application sucessfully, we can check our BIG-IP c
 
 Here you can see that the pool members listed are all the kubernetes nodes. 
 
-Now you can try to access your application via your BIG-IP VIP: 10.1.10.80: 
+Now you can try to access your application via your BIG-IP VIP: 10.1.10.81: 
 
 .. image:: ../images/f5-container-connector-access-app.png
 	:align: center
 	:scale: 50%
 
-Hit Refresh many times and go to your **BIG-IP** UI, go to Local Traffic > Pools > Pool list > my-frontend_10.1.10.80_80 > Statistics to see that traffic is distributed as expected
+Hit Refresh many times and go to your **BIG-IP** UI, go to Local Traffic > Pools > Pool list > my-frontend_10.1.10.81_80 > Statistics to see that traffic is distributed as expected
   
  .. image:: ../images/f5-container-connector-check-app-bigip-stats.png
  	:align: center
