@@ -9,18 +9,18 @@ In this section, we will cover our setup:
 	* 2 nodes
 
 
-Here is the setup we will leverage to either create a new environment or to connect to an existing environment (F5 UDF - Blueprint called *[Kubernetes] how to setup ASP and CC* )
+We will connect to a pre-built environment in Ravello
 
 In the existing environment, here is the setup you'll get: 
 
-==================  ====================  ====================  ============  =============================================
-     Hostname           Management IP        Kubernetes IP          Role                 Login/Password
-==================  ====================  ====================  ============  =============================================
-     ip-10-1-1-4          10.1.1.4            10.1.10.11          Master       ssh: ubuntu/ravello - su : root/default           
-     ip-10-1-1-5          10.1.1.5            10.1.10.21           node        ssh: ubuntu/ravello - su : root/default
-     ip-10-1-1-6          10.1.1.6            10.1.10.22           node        ssh: ubuntu/ravello - su : root/default
-     Windows              10.1.1.7            10.1.10.50        Jumpbox        rdp: student/agility
-==================  ====================  ====================  ============  =============================================
+==================  ====================  ============  =============================================
+     Hostname           Kubernetes IP          Role                 Login/Password
+==================  ====================  ============  =============================================
+     ip-10-1-1-4          10.1.10.11          Master        ssh: ubuntu/ravello - su : root/default           
+     ip-10-1-1-5          10.1.10.21           node1        ssh: ubuntu/ravello - su : root/default
+     ip-10-1-1-6          10.1.10.22           node2        ssh: ubuntu/ravello - su : root/default
+     Windows              <public IP>        Jumpbox        rdp: student/agility
+==================  ====================  ============  =============================================
 
 
 Here are the different aspects to take into account during this installation guide: 
