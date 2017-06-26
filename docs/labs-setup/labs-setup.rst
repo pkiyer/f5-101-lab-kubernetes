@@ -19,7 +19,7 @@ In the existing environment, here is the setup you'll get:
      ip-10-1-1-4          10.1.1.4            10.1.10.11          Master       ssh: ubuntu/ravello - su : root/default           
      ip-10-1-1-5          10.1.1.5            10.1.10.21           node        ssh: ubuntu/ravello - su : root/default
      ip-10-1-1-6          10.1.1.6            10.1.10.22           node        ssh: ubuntu/ravello - su : root/default
-     Windows              10.1.1.7            10.1.10.50        Jumpbox        rdo: student/agility
+     Windows              10.1.1.7            10.1.10.50        Jumpbox        rdp: student/agility
 ==================  ====================  ====================  ============  =============================================
 
 
