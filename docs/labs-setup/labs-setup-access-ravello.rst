@@ -1,4 +1,4 @@
-.. _labs_setup:
+.. _access_ravello:
 
 Connecting to Ravello
 =================
