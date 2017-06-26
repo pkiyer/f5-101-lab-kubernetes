@@ -1,5 +1,3 @@
-.. _access_ravello:
-
 Connecting to Ravello
 =================
 
