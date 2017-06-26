@@ -26,7 +26,7 @@ Connect to your Ravello Student environment
       node 1              10.1.10.21           node        ssh: ubuntu/ravello - su : root/default
       node 2              10.1.10.22           node        ssh: ubuntu/ravello - su : root/default
      Windows              <public IP>        Jumpbox      rdp: student/agility
-==================  ====================  ============  =============================================
+==================   ====================  ============  =============================================
 
 .. note::
 
