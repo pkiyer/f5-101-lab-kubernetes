@@ -1,4 +1,4 @@
-.. _access_ravello:
+.. labs-setup-access-ravello.rst:
 
 Connecting to Ravello
 =================
