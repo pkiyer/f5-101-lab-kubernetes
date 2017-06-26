@@ -7,7 +7,7 @@ Every node in the cluster need to run an instance of ASP. The steps below demons
 
 The DaemonSet ensures one Application Services Proxy runs per node in the Kubernetes cluster. The ConfigMap contains the configurations you want to apply to each ASP instance.
 
-The first step will be to load the relevant F5 container images into our system. if you use the UDF blueprint, it's already done in our private registry (10.1.10.11:5000).  Normally you would retreive ASP from the Docker Store (requires accepting a EULA, freely distributed).
+The first step will be to load the relevant F5 container images into our system. The ASP container image has been pulled  in our private registry.  Normally you would retreive ASP from the Docker Store (requires account and accepting a EULA, freely distributed).
 
 the official F5 ASP documentation is here: `Install the F5 Kubernetes Application Service Proxy <http://clouddocs.f5.com/containers/v1/kubernetes/asp-install-k8s.html>`_  and `Deploy the F5 Application Service Proxy with the F5 Kubernetes Prox <http://clouddocs.f5.com/containers/v1/kubernetes/asp-k-deploy.html>`_ 
 
