@@ -8,17 +8,15 @@ BIG-IP setup
 
 To use F5 Container connector, you'll need a BIG-IP up and running first. 
 
-In the UDF blueprint, you should have a BIG-IP available at the following URL: https://10.1.10.60
+Through the Jumpbox, you should have a BIG-IP available at the following URL: https://10.1.10.60
 
 .. warning:: 
-
-	if you use UDF, it's recommended to connect to your BIG-IP from the RDP session instead of going directly to it from the UDF portal and TMUI option
 
 Connect to your BIG-IP and check it is active and licensed. Its login and password are: **admin/admin**
 
 .. note::
 
-	if your BIG-IP has no license or its license expired, renew the license. You just need a LTM VE license for this lab. No specific add-ons are required
+	if your BIG-IP has no license or its license expired, renew the license. You just need a LTM VE license for this lab. No specific add-ons are required (ask a lab instructor for eval licenses if your license has expired)
 
 You need to setup a partition that will be used by F5 Container Connector. 
 
@@ -35,8 +33,6 @@ Container Connector deployment
 Here we consider you have already retrieved the F5 container connector image and loaded it in the environment. 
 
 .. note::
-
-	If you use the UDF blueprint it's already loaded in our private registry 10.1.10.11:5000 (10.1.10.11:5000/k8s-bigip-ctlr:v1.0.0).
 
 If you haven't loaded it in your environment, you have two choices :
 
@@ -113,12 +109,11 @@ create a file called f5-cc-deployment.yaml. Here is its content:
 
 .. Note::
 
-	If you use UDF, you have templates you can use in your jumpbox. It's on the Desktop > F5 > kubernetes-demo folder. If you use those files, you'll need to :
+You can use the templates on your jumpbox desktop or the Kubernetes Master under /honme/ubuntu/f5-demo. If you use those files, you'll need to :
 
 		* check the container image path in the deployment file is accurate
 		* Update the "bindAddr" in the configMap for an IP you want to use in this blueprint. 
-
-if you don't use the UDF blueprint, you need to update the field *image* with the appropriate path to your image. 
+ 
 
 If you have issues with your yaml and syntax (**identation MATTERS**), you can try to use an online parser to help you : `Yaml parser <http://codebeautify.org/yaml-validator>`_
 
