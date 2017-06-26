@@ -1,6 +1,6 @@
 .. _access_udf:
 
-Connecting to UDF
+Connecting to Ravello
 =================
 
 We consider that you have access to UDF for the different labs. 
