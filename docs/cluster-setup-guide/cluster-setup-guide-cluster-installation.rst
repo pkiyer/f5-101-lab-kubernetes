@@ -8,13 +8,13 @@ Overview
 
 As a reminder, in this example, this is our cluster setup:
 
-==================  ====================  ====================  ============
-     Hostname           Management IP        Kubernetes IP          Role
-==================  ====================  ====================  ============
-     Master 1             10.1.1.4            10.1.10.11          Master
-      node 1              10.1.1.5            10.1.10.21           node
-      node 2              10.1.1.6            10.1.10.22           node
-==================  ====================  ====================  ============
+==================  ====================  ============
+     Hostname           Kubernetes IP          Role
+==================  ====================  ============
+     Master 1             10.1.10.11          Master
+      node 1              10.1.10.21           node
+      node 2              10.1.10.22           node
+==================  ====================  ============
 
 
 For this setup we will use the steps specified here: `Ubuntu getting started guide 16.04 <http://kubernetes.io/docs/getting-started-guides/kubeadm/>`_
