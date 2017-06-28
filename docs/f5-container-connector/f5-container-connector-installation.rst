@@ -64,7 +64,7 @@ you should see something like this:
 	:align: center
 
 
-create a file called f5-cc-deployment.yaml. Here is its content:
+create a file called f5-cc-deployment.yaml. Here is its content: ---> Please use the file in /home/ubuntu/f5-demo
 
 ::
 
