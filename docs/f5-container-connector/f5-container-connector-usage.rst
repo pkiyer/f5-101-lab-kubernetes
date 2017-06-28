@@ -16,7 +16,7 @@ App Deployment
 
 On the **master** we will create all the required files: 
 
-Create a file called my-frontend-deployment.yaml: <***a version of this file is already available in /home/ubuntu/f5-demo. Please use that to avoid syntax issues due to copy/paste***> 
+Create a file called my-frontend-deployment.yaml: *** A version of this file is already available in /home/ubuntu/f5-demo. Please use that to avoid syntax issues due to copy/paste
 
 ::
 
