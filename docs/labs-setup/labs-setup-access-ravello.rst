@@ -1,4 +1,4 @@
-Connecting to Ravello
+2. Connecting to Ravello
 =================
 
 This guide will help you to either setup your own environment or leverage Ravello to learn about this. 
