@@ -16,7 +16,7 @@ App Deployment
 
 On the **master** we will create all the required files: 
 
-Create a file called my-frontend-deployment.yaml: *** A version of this file is already available in /home/ubuntu/f5-demo. Please use that to avoid syntax issues due to copy/paste
+Create a file called my-frontend-deployment.yaml: ---> Please use the file in /home/ubuntu/f5-demo
 
 ::
 
@@ -44,7 +44,7 @@ Create a file called my-frontend-deployment.yaml: *** A version of this file is 
 	        - containerPort: 80
 	          protocol: TCP
 
-Create a file called my-frontend-configmap.yaml:
+Create a file called my-frontend-configmap.yaml:    ---> Please use the file in /home/ubuntu/f5-demo
 
 ::
 
@@ -76,8 +76,8 @@ Create a file called my-frontend-configmap.yaml:
 	      }
 	    }
 
-Create a file called my-frontend-service.yaml:
-
+Create a file called my-frontend-service.yaml:   ---> Please use the file in /home/ubuntu/f5-demo
+ 
 ::
 
 	apiVersion: v1
