@@ -4,12 +4,6 @@
 This guide will help you to either setup your own environment or leverage Ravello to learn about this. 
 
 
-Create your environment
------------------------
-
-If you want to setup your own kubernetes environment, you need to create your own deployment reflecting what has been explained in the previous section. Please go to the Cluster setup guide to do this: :ref:`my-cluster-setup`
-
-
 Connect to your Ravello Student environment
 --------------------------
 
@@ -25,10 +19,6 @@ Connect to your Ravello Student environment
       node 2              10.1.10.22           node        ssh: ubuntu/ravello - su : root/default
      Windows              <public IP>        Jumpbox      rdp: student/agility
 ==================   ====================  ============  =============================================
-
-.. note::
-
-  There is also a docker registry available to centralize our docker images. it's accessible via 10.1.10.11:5000
 
 Access your environment
 -----------------------
