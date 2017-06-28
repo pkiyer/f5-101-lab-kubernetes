@@ -1,4 +1,4 @@
-Labs setup/access
+Lab guide
 =================
 
 In this section, we will cover our setup: 
