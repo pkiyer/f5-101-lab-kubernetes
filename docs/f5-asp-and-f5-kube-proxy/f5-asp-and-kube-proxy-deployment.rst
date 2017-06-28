@@ -23,7 +23,7 @@ To deploy ASP, we will need to load several configuration into our Kubernetes so
 
 To setup those components, connect to the **master** and do the following: 
 
-create a yaml file called *f5-asp-configmap.yaml* and here is the content to copy/paste into it. 
+create a yaml file called *f5-asp-configmap.yaml* and here is the content to copy/paste into it.  ---> Please use the file in /home/ubuntu/f5-demo
 
 ::
 
@@ -48,7 +48,7 @@ create a yaml file called *f5-asp-configmap.yaml* and here is the content to cop
 
 
 
-Once the configmap file is done, we can setup the daemonset file. Create a file called *f5-asp-daemonset.yaml* and here is the content to copy/paste into it. 
+Once the configmap file is done, we can setup the daemonset file. Create a file called *f5-asp-daemonset.yaml* and here is the content to copy/paste into it.  ---> Please use the file in /home/ubuntu/f5-demo
 
 ::
 
@@ -133,7 +133,7 @@ Now we can create our new daemonset to launch the F5-kube-proxy. create a new de
 
 	vi  /tmp/f5-kube-proxy-ds.yaml
 
-Here is the content of the file, copy/paste it. 
+Here is the content of the file, copy/paste it.  ---> Please use the file in /home/ubuntu/f5-demo
 
 ::
 
