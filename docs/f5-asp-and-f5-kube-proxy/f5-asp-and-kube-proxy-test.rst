@@ -28,7 +28,7 @@ Create a file called *my-backend-deployment.yaml*. Here is its content:    ---> 
          run: my-backend
       spec:
         containers:
-        - image: 10.1.10.11:5000/f5-demo-app
+        - image: chen23/f5-demo-app
           imagePullPolicy: IfNotPresent
           env:
           - name: F5DEMO_APP
@@ -90,7 +90,7 @@ You can check if the deployment was successful with the commands:
   :align: center
 
 
-To test our application, access the frontend app with your browser. It is available via the BIG-IP with the URL: http://10.1.10.80
+To test our application, access the frontend app with your browser. It is available via the BIG-IP with the URL: http://10.1.10.81
 
 .. image:: ../images/f5-asp-and-kube-proxy-test-app-backend.png
   :align: center
