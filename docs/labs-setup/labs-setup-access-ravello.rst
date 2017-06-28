@@ -66,3 +66,5 @@ Click on the shortcut that got downloaded and it should open your RDP session. T
    * Add the language you want to have for your keyboard mapping. 
 
 Once you have access to your environment, you can go directly to the container connector section: :ref:`container-connector`
+
+---> All the files referenced in this guide can be accessed in the /home/ubuntu/f5-demo directory. Please use the files in this directory, to avoid syntax issues from copy/paste errors  <---
