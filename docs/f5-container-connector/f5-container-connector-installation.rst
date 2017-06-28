@@ -137,7 +137,7 @@ FYI, To locate on which node the container connector is running, you can use the
 .. image:: ../images/f5-container-connector-locate-controller-container.png
 	:align: center
 
-We can see that our container is running on ip-10-1-1-5 (Agent1) 
+We can see that our container is running on the nodes
 
 If you need to troubleshoot your container, you have two different ways to check the logs of your container: 
 
@@ -156,7 +156,7 @@ If you want to use kubectl command: you need to use the full name of your pod as
 
 If you want to use docker logs command
 
-On **ip-10-1-1-5** which is Node1 (or another node depending on the previous command): 
+On Node1 (or another node depending on the previous command): 
 
 :: 
 
