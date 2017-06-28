@@ -1,4 +1,4 @@
-Container Connector Usage
+4. Container Connector Usage
 =========================
 
 Now that our container connector is up and running, let's deploy an application and leverage our CC. 
