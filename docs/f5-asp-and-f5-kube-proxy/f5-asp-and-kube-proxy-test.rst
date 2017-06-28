@@ -1,4 +1,4 @@
-6. Test ASP and F5 Kube Proxy
+Test ASP and F5 Kube Proxy
 ==========================
 
 The F5 ASP instances and F5 kube proxy instances have been deployed. Now we need to test our setup. To do so we will setup a backend application that will be reached by the frontend application we created earlier. 
