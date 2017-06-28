@@ -146,7 +146,7 @@ Now that we have deployed our application sucessfully, we can check our BIG-IP c
 
 Here you can see that the pool members listed are all the kubernetes nodes. 
 
-Now you can try to access your application via your BIG-IP VIP: 10.1.10.81: 
+Now you can try to access your application via your BIG-IP VIP: 10.1.10.80: 
 
 .. image:: ../images/f5-container-connector-access-app.png
 	:align: center
