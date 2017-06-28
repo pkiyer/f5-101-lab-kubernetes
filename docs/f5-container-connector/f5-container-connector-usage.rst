@@ -32,7 +32,7 @@ Create a file called my-frontend-deployment.yaml: ---> Please use the file in /h
 	        run: my-frontend
 	    spec:
 	      containers:
-	      - image: "10.1.10.11:5000/f5-demo-app"
+	      - image: "chen23/f5-demo-app"
 	        env:
 	        - name: F5DEMO_APP
 	          value: "frontend"
@@ -104,9 +104,10 @@ We can now launch our application :
 
 	kubectl create -f my-frontend-deployment.yaml
 
+	kubectl create -f my-frontend-service.yaml
+
 	kubectl create -f my-frontend-configmap.yaml
 
-	kubectl create -f my-frontend-service.yaml
 
 .. image:: ../images/f5-container-connector-launch-app.png
 	:align: center
