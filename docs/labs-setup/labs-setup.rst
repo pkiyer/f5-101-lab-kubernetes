@@ -1,4 +1,4 @@
-Lab guide
+2. Lab guide
 =================
 
 In this section, we will cover our setup: 
