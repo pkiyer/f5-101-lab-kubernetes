@@ -12,7 +12,7 @@ We need to create two configuration to deploy our backend application:
 * The service: will define our access our application. It will also contains annotations to leverage the ASP Lightweight proxy
 
 
-Create a file called *my-backend-deployment.yaml*. Here is its content: 
+Create a file called *my-backend-deployment.yaml*. Here is its content:    ---> Please use the file in /home/ubuntu/f5-demo
 
 ::
 
@@ -40,7 +40,7 @@ Create a file called *my-backend-deployment.yaml*. Here is its content:
 
 
 
-Create another file called *my-backend-service.yaml*. Here is its content: 
+Create another file called *my-backend-service.yaml*. Here is its content:    ---> Please use the file in /home/ubuntu/f5-demo
 
 ::
 
@@ -70,7 +70,7 @@ Create another file called *my-backend-service.yaml*. Here is its content:
       run: my-backend
 
 
-Once our files are created, we can deploy our backend application with the following commands: 
+Once our files are created, we can deploy our backend application with the following commands:    
 
 ::
 
