@@ -66,7 +66,7 @@ Once the configmap file is done, we can setup the daemonset file. Create a file 
 	      hostNetwork: true
 	      containers:
 	        - name: proxy-plugin
-	          image: "10.1.10.11:5000/asp:v1.0.0"
+	          image: "store/f5networks/asp:1.0.0"
 	          args:
 	            - --config-file
 	            - /etc/configmap/asp.config.json
