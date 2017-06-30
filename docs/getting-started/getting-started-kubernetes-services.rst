@@ -144,7 +144,8 @@ On cloud providers which support external load balancers, setting the type field
 	    }
 	}
 
- Traffic from the external load balancer will be directed at the backend *Pods*, though exactly how that works depends on the cloud provider (AWS, GCE, ...). Some cloud providers allow the loadBalancerIP to be specified. In those cases, the load-balancer will be created with the user-specified loadBalancerIP. If the loadBalancerIP field is not specified, an ephemeral IP will be assigned to the loadBalancer. If the loadBalancerIP is specified, but the cloud provider does not support the feature, the field will be ignored
+ 
+Traffic from the external load balancer will be directed at the backend *Pods*, though exactly how that works depends on the cloud provider (AWS, GCE, ...). Some cloud providers allow the loadBalancerIP to be specified. In those cases, the load-balancer will be created with the user-specified loadBalancerIP. If the loadBalancerIP field is not specified, an ephemeral IP will be assigned to the loadBalancer. If the loadBalancerIP is specified, but the cloud provider does not support the feature, the field will be ignored
 
 Service proxies
 ---------------
@@ -157,7 +158,7 @@ In this mode, *kube-proxy* watches the Kubernetes *master* for the addition and 
 
 By default, the choice of backend is random. Client-IP based session affinity can be selected by setting **service.spec.sessionAffinity** to "ClientIP" (the default is "None").
 
-As with the userspace proxy, the net result is that any traffic bound for the *Service*’s IP:Port is proxied to an appropriate backend without the clients knowing anything about Kubernetes or *Services* or *Pods*. This should be faster and more reliable than the userspace proxy. However, unlike the userspace proxier, the iptables proxier cannot automatically retry another *Pod* if the one it initially selects does not respond, so it depends on having working *readiness probes*. A readiness probes give you the capability to monitor the status of a *pod* via health-checks
+As with the userspace proxy, the net result is that any traffic bound for the *Service*’s IP:Port is proxied to an appropriate backend without the clients knowing anything about Kubernetes or *Services* or *Pods*. This should be faster and more reliable than the userspace proxy. However, unlike the userspace proxier, the iptables proxier cannot automatically retry another *Pod* if the one it initially selects does not respond, so it depends on having working *readiness probes*. A readiness probe gives you the capability to monitor the status of a *pod* via health-checks
 
 Service discovery
 -----------------
