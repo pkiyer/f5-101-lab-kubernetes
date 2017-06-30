@@ -21,7 +21,7 @@ In order for Docker containers to communicate across nodes, they must be allocat
 Kubernetes model
 ----------------
 
-Coordinating ports across multiple developers is very difficult to do at scale and exposes users to cluster-level issues outside of their control. 
+Coordinating ports across multiple containers is very difficult to do at scale and exposes users to cluster-level issues outside of their control. 
 Dynamic port allocation brings a lot of complications to the system - every application has to take ports as flags, the API servers have to know how to insert dynamic port numbers into configuration blocks, services have to know how to find each other, etc. Rather than deal with this, Kubernetes takes a different approach.
 
 Kubernetes imposes the following fundamental requirements on any networking implementation (barring any intentional network segmentation policies):
