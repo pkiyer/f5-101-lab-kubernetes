@@ -27,12 +27,12 @@ The f5-k8s-controller watches for the creation and modification of F5 resources 
 * the BIG-IP then handles traffic for the Service on the specified virtual address and load-balances to all nodes in the cluster. 
 * within the cluster, the allocated NodePort is load-balanced to all pods for the Service.
 
-Before being able to use the Container Connecter, you need to handle some prerequisites
+Before being able to use the Container Connector, you need to handle some prerequisites
 
 Prerequisites
 -------------
 
 * You must have a fully active/licensed BIG-IP
-* A BIG-IP partition needs to be setup for the Container connector.
+* A BIG-IP partition needs to be setup for the Container Connector.
 * You need a user with administrative access to this partition
 * Your kubernetes environment must be up and running already 
