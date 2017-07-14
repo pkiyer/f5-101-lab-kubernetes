@@ -4,47 +4,18 @@ Welcome to F5 101 Kubernetes lab's documentation!
 Introduction
 ============
 
-#Introduction to Kubernetes and F5 solutions for Kubernetes
-
 The purpose of this lab is to give you more visibility on
 
 * Overview of Kubernetes and its key components
-* Install Kubernetes in different flavors: All-in-one, One kubernetes Cluster (1 Master and 2 minions), 
+* Install Kubernetes in different flavors: All-in-one, One kubernetes Cluster (1 Master and 2 minions),
 * How to launch application in Kubernetes
 * How to install and use F5 containerized solutions (Container connector, Application Service proxy and F5 kube proxy)
 
-
-Contents:
-
-
 .. toctree::
    :maxdepth: 2
-   :caption: Getting Started
+   :numbered:
+   :caption: Contents:
+   :glob:
 
-   getting-started/getting-started-intro.rst
-   getting-started/getting-started-kubernetes-overview.rst
-   getting-started/getting-started-kubernetes-networking.rst
-   getting-started/getting-started-kubernetes-services.rst
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Labs setup
-
-   labs-setup/labs-setup.rst
-   labs-setup/labs-setup-access-ravello.rst
-
-.. toctree::
-   :maxdepth: 2
-   :caption: F5 container connector
-
-   f5-container-connector/f5-container-connector-overview.rst
-   f5-container-connector/f5-container-connector-installation.rst
-   f5-container-connector/f5-container-connector-usage.rst
-
-.. toctree::
-   :maxdepth: 2
-   :caption: F5 ASP and kube-proxy
-
-   f5-asp-and-f5-kube-proxy/f5-asp-and-kube-proxy-overview.rst
-   f5-asp-and-f5-kube-proxy/f5-asp-and-kube-proxy-deployment.rst
-   f5-asp-and-f5-kube-proxy/f5-asp-and-kube-proxy-test.rst
+   intro*
+   class*/class*
