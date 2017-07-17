@@ -1,21 +1,21 @@
 F5 ASP and kube-proxy Deployment
 ================================
 
-To use ASP, we will need to add a Application Services Proxy(ASP) Instance to Every Node
+To use ASP, we will need to add a Application Services Proxy(ASP) instance to Every Node
 
-Every node in the cluster need to run an instance of ASP. The steps below demonstrate how to use a Kubernetes ConfigMap and DaemonSet to run one Application Services Proxy per node and apply the same configurations to each ASP instance.
+Every node in the cluster needs to run an instance of ASP. The steps below demonstrate how to use a Kubernetes ConfigMap and DaemonSet to run one Application Services Proxy per node and apply the same configurations to each ASP instance.
 
 The DaemonSet ensures one Application Services Proxy runs per node in the Kubernetes cluster. The ConfigMap contains the configurations you want to apply to each ASP instance.
 
-The first step will be to load the relevant F5 container images into our system. The ASP container image has been pulled  in our private registry.  Normally you would retreive ASP from the Docker Store (requires account and accepting a EULA, freely distributed).
+The first step will be to load the relevant F5 container images into our system. The ASP container image has been pulled  in our private registry.  Normally, you would retreive ASP from the Docker Store (requires account and accepting a EULA, freely distributed).
 
-the official F5 ASP documentation is here: `Install the F5 Kubernetes Application Service Proxy <http://clouddocs.f5.com/containers/v1/kubernetes/asp-install-k8s.html>`_  and `Deploy the F5 Application Service Proxy with the F5 Kubernetes Prox <http://clouddocs.f5.com/containers/v1/kubernetes/asp-k-deploy.html>`_
+Official F5 ASP documentation can be found here: `Install the F5 Kubernetes Application Service Proxy <http://clouddocs.f5.com/containers/v1/kubernetes/asp-install-k8s.html>`_  and `Deploy the F5 Application Service Proxy with the F5 Kubernetes Prox <http://clouddocs.f5.com/containers/v1/kubernetes/asp-k-deploy.html>`_
 
 
 Deploy ASP
 ----------
 
-To deploy ASP, we will need to load several configuration into our Kubernetes solution:
+To deploy ASP, we will need to add the following configuration to our Kubernetes solution:
 
 * A configmap: The ConfigMap contains the configurations you want to apply to each LWP instance.
 * A daemonset: The DaemonSet ensures one Application Services Proxy runs per node in the Kubernetes cluster.
@@ -48,7 +48,7 @@ create a yaml file called *f5-asp-configmap.yaml* and here is the content to cop
 
 
 
-Once the configmap file is done, we can setup the daemonset file. Create a file called *f5-asp-daemonset.yaml* and here is the content to copy/paste into it.  ---> Please use the file in /home/ubuntu/f5-demo
+After the configmap file, we can setup the daemonset file. Create a file called *f5-asp-daemonset.yaml* and here is the content to copy/paste into it.  ---> Please use the file in /home/ubuntu/f5-demo
 
 ::
 
@@ -97,7 +97,7 @@ On the **master**, run the following commands:
 
 	kubectl create -f f5-asp-daemonset.yaml
 
-Here the ASP should be deployed automatically. You should have as many ASP instances launched as kubernetes systems you have in your kubernetes cluster (in the UDF blueprint, it's three - 3). You can validate this with the following commands:
+Here the ASP should be deployed automatically. You should have as many ASP instances launched as kubernetes systems you have in your kubernetes cluster (in the Ravello blueprint, there are three - 3). You can validate this with the following commands:
 
 ::
 
@@ -106,7 +106,7 @@ Here the ASP should be deployed automatically. You should have as many ASP insta
 .. image:: /_static/f5-asp-and-kube-proxy-deploy-asp.png
 	:align: center
 
-The ASP are deployed. Now we need to update the kube-proxy with the F5-kube-proxy instances so that we can leverage our ASP
+There should be three entries in the table returned by the command above that start with "f5-asp-".  The ASP instances are deployed. Now we need to update the kube-proxy with the F5-kube-proxy instances so that we can leverage our ASP.
 
 
 Deploy f5-kube-proxy
@@ -126,8 +126,13 @@ It should launch a VI editor, save the configuration with the following command 
 
 	:w /tmp/kube-proxy-origin.yaml
 
+Exit the VI editor with 
 
-Now we can create our new daemonset to launch the F5-kube-proxy. create a new deamonset yaml called *f5-kube-proxy-ds.yaml*
+::
+
+	:q
+
+Now, we can create our new daemonset to launch the F5-kube-proxy. create a new deamonset yaml called *f5-kube-proxy-ds.yaml*
 
 ::
 
@@ -230,6 +235,8 @@ You can check that the kube-proxy instances have been removed from Kubernetes wi
 
 .. image:: /_static/f5-asp-and-kube-proxy-delete-origin-kube-proxy.png
 	:align:	center
+
+Note that the entries starting with "kube-proxy-" in the table. 
 
 We can deploy the updated daemonset:
 
