@@ -156,7 +156,7 @@ Hit Refresh many times and go to your **BIG-IP** UI, go to Local Traffic > Pools
    :align: center
    :scale: 50%
 
-How does traffic is forwarded in Kubernetes from the <node IP>:32402 to the <container IP>:80 ? This is done via iptables that is managed via the kube-proxy instances:
+How is traffic forwarded in Kubernetes from the <node IP>:32402 to the <container IP>:80 ? This is done via iptables that is managed via the kube-proxy instances:
 
 On **any nodes** (master/nodes), run the following command:
 
@@ -164,7 +164,7 @@ On **any nodes** (master/nodes), run the following command:
 
   sudo iptables-save | grep my-frontend
 
-This will list you the different iptables rules that were created regarding our frontend service.
+This will list the different iptables rules that were created regarding our frontend service.
 
 .. image:: /_static/f5-container-connector-list-frontend-iptables.png
    :align: center
