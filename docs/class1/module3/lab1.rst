@@ -232,6 +232,13 @@ You can check that the kube-proxy instances have been removed from Kubernetes wi
 ::
 
 	kubectl get pods -n kube-system
+	
+or 
+
+
+::
+
+	kubectl get pods --all-namespaces
 
 .. image:: /_static/f5-asp-and-kube-proxy-delete-origin-kube-proxy.png
 	:align:	center
